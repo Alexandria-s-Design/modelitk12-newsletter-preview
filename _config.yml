@@ -1,0 +1,33 @@
+# ModelIt! K12 Newsletter - Weekly Systems Thinking Insights
+title: "The Systems Thinker's Weekly"
+description: "Weekly insights on systems modeling, NGSS alignment, and educational innovation from ModelIt! K12"
+url: "https://alexandria-s-design.github.io"
+baseurl: "/modelitk12-newsletter"
+
+# Build settings
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+future: true  # Publish future-dated posts immediately
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Dr. Marie & Charles Martin"
+
+# Exclude from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Theme settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
